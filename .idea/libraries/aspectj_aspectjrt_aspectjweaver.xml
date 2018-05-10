@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="aspectj+aspectjrt+aspectjweaver">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../aspectj+aspectjrt+aspectjweaver/aspectj+aspectjrt+aspectjweaver" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../aspectj+aspectjrt+aspectjweaver/aspectj+aspectjrt+aspectjweaver" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../aspectj+aspectjrt+aspectjweaver/aspectj+aspectjrt+aspectjweaver" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../aspectj+aspectjrt+aspectjweaver/aspectj+aspectjrt+aspectjweaver" recursive="false" type="SOURCES" />
+  </library>
+</component>
