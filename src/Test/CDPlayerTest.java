@@ -1,5 +1,6 @@
 package Test;
 
+import Bean.AnimalPerformance;
 import Bean.CDPlayerConfig;
 import Bean.CDPlayerConfigNoAutowised;
 import BeanInterface.CompactDisc;
@@ -30,6 +31,9 @@ public class CDPlayerTest {
     @Autowired
     private MediaPlayer mp;
 
+    @Autowired
+    private AnimalPerformance ap;
+
     @Test
     public void cdShouldNotBeNull(){
         assertNotNull(cd);
@@ -38,5 +42,10 @@ public class CDPlayerTest {
     @Test
     public void play(){
         mp.play();
+    }
+
+    @Test
+    public void animalPerform(){
+        ap.perform();
     }
 }

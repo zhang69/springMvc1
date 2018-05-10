@@ -1,5 +1,6 @@
 package Bean;
 
+import AspectClass.Audience;
 import BeanInterface.CompactDisc;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
