@@ -12,8 +12,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * 开启aop代理
  * 设置组件扫描
  */
-@Configuration
-@EnableAspectJAutoProxy
-@ComponentScan(basePackageClasses = {SgtPeppers.class, CompactDisc.class})//safe 不加不会自动扫描
+//@Configuration
+//@EnableAspectJAutoProxy
+//@ComponentScan(basePackageClasses = {SgtPeppers.class, CompactDisc.class})//safe 不加不会自动扫描
 public class CDPlayerConfig {
 }

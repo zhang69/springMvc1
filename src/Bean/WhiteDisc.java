@@ -18,4 +18,9 @@ public class WhiteDisc implements CompactDisc {
     public void play() {
         System.out.println(name+":"+title);
     }
+
+    @Override
+    public void playTrack(int trackNumber) {
+
+    }
 }

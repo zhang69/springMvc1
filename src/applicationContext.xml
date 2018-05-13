@@ -11,10 +11,26 @@
     <!--<aop:aspectj-autoproxy/>-->
     <!--基于xml的手动注入-->
     <!--连个参数顺序排列书写-->
-    <bean id="compactDisc" class="Bean.BlankDisc">
-        <constructor-arg value="zzy"/>
-        <constructor-arg value="ok"/>
+    <bean id="tc" class="AspectClass.TrackCounter"/>
+    <bean id="cd" class="Bean.BlankDisc">
+        <property name="title" value="zzy"/>
+        <property name="name" value="ok"/>
+        <property name="tracks">
+            <list>
+                <value>number0</value>
+                <value>number1</value>
+                <value>number2</value>
+                <value>number3</value>
+            </list>
+        </property>
     </bean>
+    <aop:config>
+        <aop:aspect ref="tc">
+            <!--before and after of 'and' must have space-->
+            <aop:pointcut id="tp" expression="execution(* BeanInterface.CompactDisc.playTrack(int)) and args(trackNumber)"/>
+            <aop:before pointcut-ref="tp" method="countTrack"/>
+        </aop:aspect>
+    </aop:config>
     <!--结构体c引入-->
-    <bean id="mediaPlayer" class="Bean.CDPlayer" c:cd-ref="compactDisc"/>
+    <!--<bean id="mediaPlayer" class="Bean.CDPlayer" c:cd-ref="cd"/>-->
 </beans>
